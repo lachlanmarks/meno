@@ -1,0 +1,22 @@
+<div id="post-question-wrapper">   
+    <div id="content-menu">
+        <span class="content-menu-title">Ask a question</span>
+    </div>
+    <div id="ask-q-input-box">
+        <form name="post-question" action="/meno/asking" method="post">
+            <div id="ask-q-title-box">
+                <div>Title</div>
+                <input name='question-title' id="title-input" type="text" title="Give your question a helpful title. Be clear and specific" value="Give your question a helpful title. Be clear and specific" />
+            </div>
+                <div id='ask-q-category-box'>
+                        <div>Category</div>
+                    <select name='question-category'>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Programming">Programming</option>
+                    </select>
+                </div>
+                <div id="post-question-text-area"></div>
+                <input id="post-question-submit" type="submit" value="Ask" />
+        </form>
+    </div>
+</div>
