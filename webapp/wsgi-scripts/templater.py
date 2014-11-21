@@ -56,7 +56,7 @@ SUB_MENU_THREAD = 	[('Rank','?tab=rank'),
         ('Newest','?tab=new'), 
         ('Oldest','?tab=old')] 
 
-TPATH = '/static/'
+TEMPLATE_PATH = '/static/'
 """
 
 Internal functions:
