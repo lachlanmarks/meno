@@ -56,6 +56,7 @@ SUB_MENU_THREAD = 	[('Rank','?tab=rank'),
         ('Newest','?tab=new'), 
         ('Oldest','?tab=old')] 
 
+TPATH = '/static/'
 """
 
 Internal functions:
@@ -96,7 +97,7 @@ def _set_attribute(template, elm_list, attr_in, text_in):
 # Inserts an xhtml template into the children of a list of elm objects at index.
 # Use for inserting a new xhtml template into the current template.
 def _insert_template(template, new_template_name, root_elms, index = 0):
-    tmp_tree = xml.etree.ElementTree.parse('/home/webapp/static/templates/{0}.xhtml'.format(new_template_name))
+    tmp_tree = xml.etree.ElementTree.parse('{0}/templates/{1}.xhtml'.format(TEMPLATE_PATH, new_template_name))
     tmp_root = tmp_tree.getroot()
     for elm in root_elms:
         elm.insert(index, tmp_root)
@@ -133,7 +134,7 @@ Template classes:
 # Superclass for all template objects:
 class Template(object):
     def __init__(self, template_name):
-        self.tree = xml.etree.ElementTree.parse('/home/webapp/static/templates/{0}.xhtml'.format(template_name))
+        self.tree = xml.etree.ElementTree.parse(TEMPLATE_PATH + 'templates/{0}.xhtml'.format(template_name))
         self.root = self.tree.getroot()
         
     # Adds its self to the given Page object. For content objects:
