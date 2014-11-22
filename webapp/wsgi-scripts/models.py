@@ -2,6 +2,7 @@ CATEGORY_MAP = {
         'category_id': 'id',
         'category_name': 'name',
         }
+
 SESSION_MAP = {
         'session_id': 'id',
         'user_id': 'user_id',
