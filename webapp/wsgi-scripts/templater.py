@@ -56,7 +56,7 @@ SUB_MENU_THREAD = 	[('Rank','?tab=rank'),
         ('Newest','?tab=new'), 
         ('Oldest','?tab=old')] 
 
-TEMPLATE_PATH = '/static/'
+TEMPLATE_PATH = '/home/lmarks/meno/webapp/static/'
 """
 
 Internal functions:
