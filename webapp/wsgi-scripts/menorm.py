@@ -32,7 +32,7 @@ import datetime
 # Class for connecting to database via MySQLdb and executing queries
 class Database(object):
     # Default settings for connecting to MySQL database
-    settings = {'host': 'mysql.server','port':3306,'user': 'lmarks','db': 'meno'}
+    settings = {'host': 'mysql.server','port':3306,'user': 'lmarks', 'password' : 'dbtime', 'db': 'meno'}
 
     #MySQLdb.connect() object
     def __init__(self):
