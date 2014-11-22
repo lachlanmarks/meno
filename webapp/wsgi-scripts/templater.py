@@ -273,7 +273,7 @@ class UsersList(List):
             new_list_elm = copy.deepcopy(self.list_elm)
             _set_attribute(new_list_elm, _get_subelm_by_class(new_list_elm, 'user-avatar'), 'src', data['avatar'])
             _set_text(new_list_elm, _get_subelm_by_class(new_list_elm, 'user-username'), data['username'])
-            _set_attribute(new_list_elm, _get_subelm_by_class(new_list_elm, 'user-username'), 'href', '/meno/user/' + data['user_id'])
+            _set_attribute(new_list_elm, _get_subelm_by_class(new_list_elm, 'user-username'), 'href', '/user/' + data['user_id'])
             _set_text(new_list_elm, _get_subelm_by_class(new_list_elm, 'user-real-name'), data['first_name']+ ' ' + data['last_name'])
             _set_text(new_list_elm, _get_subelm_by_class(new_list_elm, 'user-location'), data['area'])
             _set_text(new_list_elm, _get_subelm_by_class(new_list_elm, 'user-rank-circle'), data['rank'])
